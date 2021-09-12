@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10 ">
+          <div class="card" style="width: 60rem;">                        
+                  <h1 class="m-auto">Employee`s absent Report</h1>
+
+                  <div class="row justify-content-center m-5" *ngIf="isAdmin">
+                    <div class="col-10 ">
+                      <select [(ngModel)]="selectedUser" class="form-control">
+                        <option disabled>Select User</option>
+                        <option>Choose User</option>
+                        <option *ngFor="let user of userList">{{user.email}}</option>
+                    </select>
+                    </div>
+                    </div>
+                    
+              <label>
+                Date Time Range From:
+                <input [owlDateTimeTrigger]="dt12" [owlDateTime]="dt12"
+                       [(ngModel)]="selectedMoments"
+                       [selectMode]="'rangeFrom'">
+                <owl-date-time #dt12></owl-date-time>
+            </label>
+            
+            <label>
+                Date Time Range To:
+                <input [owlDateTimeTrigger]="dt13" [owlDateTime]="dt13"
+                       [(ngModel)]="selectedMoments"
+                       [selectMode]="'rangeTo'">
+                <owl-date-time #dt13></owl-date-time>
+            </label>
+            <button type="button" class="btn btn-primary m-3" (click)="clicked1()" >Get hours</button> 
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">AttendanceDate</th>
+                    <th scope="col">Day</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of absentList"> 
+                    <!-- <span 
+                    *ngIf="user.totalTime >= 1"
+                    [style.backgroundcolor]="'red'"> -->
+                    <td>{{user.attendanceDate | date: 'mediumDate'}}</td>
+                    <td>{{user.dayName}}</td>
+                  <!-- </span> -->
+                    </tr>
+                </tbody>
+              </table>              
+              </div>
+        </div>
+      </div>

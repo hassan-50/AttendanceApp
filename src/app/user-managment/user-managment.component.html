@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10 ">
+          <div class="card" style="width: 60rem;">    
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">FullName</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Enable/Disable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of userList"> 
+                        <td>{{user.fullName}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.userName}}</td>
+                        <td>{{user.role}}</td>
+                        <td *ngIf="user.enabled"><button type="button" class="btn btn-primary " (click)="disable(user.email)">Disable</button></td>
+                        <td *ngIf="!user.enabled"><button type="button" class="btn btn-primary " (click)=enable(user.email)>Enable</button></td>
+                        
+                    </tr>
+                </tbody>
+              </table>              
+              </div>
+        </div>
+      </div>
+</div>

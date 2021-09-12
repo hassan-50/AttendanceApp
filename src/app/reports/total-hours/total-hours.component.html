@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10 ">
+          <div class="card" style="width: 60rem;">                        
+                  <h1 class="m-auto">Employee`s total Hours Report</h1>
+
+    <div class="row justify-content-center m-5" *ngIf="isAdmin">
+        <div class="col-10 ">
+          <select [(ngModel)]="selectedUser" class="form-control">
+            <option disabled>Select User</option>
+            <option>Choose User</option>
+            <option *ngFor="let user of userList">{{user.email}}</option>
+        </select>
+        </div>
+        </div>
+
+      <div class="row justify-content-center m-5">
+        <div class="col-10 ">
+          <h1>Select Attendance Per Specific date</h1>
+    
+          <input placeholder="Date Time:"
+               [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1"
+               [(ngModel)]="selectedMoment"                
+               ><owl-date-time #dt1></owl-date-time>         
+           <button type="button" class="btn btn-primary" (click)="clicked()" >Get hours</button> 
+          <h1 >{{Result}}  Hours</h1>
+    </div>
+      </div>
+      </div>
+</div>
