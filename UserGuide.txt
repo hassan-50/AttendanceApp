@@ -1,0 +1,28 @@
+Welcome to Attendance App
+At Firt the app consist of 2 rules admin and user rule
+email : mohamed.hassan.higazy@outlook.com
+password : 123456
+role:admin,
+
+email : alaa@gmail.com
+password : 123456
+role:user,
+
+email : mohamedali@outlook.com
+password : 123456
+role:user,
+
+after login user will be forward to Attendance page in which he can see total current week attendance and daily attendance of the week
+user can get attendance per specific date by select the the date and cick 'Get Hours' Button and to get attendance per interva select
+from and to date and click get hours button "admin user can choose user email from combo box and get his specific and interval attendance"
+
+admin user can log into 3 pages that the user cant 
+1-create user : by creating the user email will be send to this user with initial credentials and when the user logs for the first time he have to change this password
+2-add new role : he can add new role and apply this role to users when creating them
+3-list all users : admin user can list all users and disable or enable any one of them
+
+reports :
+there are 3 reports (daily attendance , absent , total attendance at specific day) admin and user can see it but user can only
+ get reports about his data unlike admin who can get attendance reports
+for any user by choosing him in the combo box
+ 

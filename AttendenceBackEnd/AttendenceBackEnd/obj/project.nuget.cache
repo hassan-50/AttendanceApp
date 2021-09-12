@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+8QZw2OXhk8dFLKqOrH7fPhpNb3+bJFPWfT+XHaVcBn1gNdcibcOMD5iZyKpklkKljuqbaDGaln1uNKBbVmyLg==",
+  "dgSpecHash": "Ydfs4Jq0jDAdGaT0B3huW9rJAu0BqlEQeg9pCybLYBc/I2ZMwZqX5MSOrY2Utnrl1JB4c72Xl8VmDyx1cF0lvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dell\\source\\repos\\AttendenceBackEnd\\AttendenceBackEnd\\AttendenceBackEnd.csproj",
+  "projectFilePath": "D:\\Attendance\\AttendanceFrontEnd\\AttendenceBackEnd\\AttendenceBackEnd\\AttendenceBackEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\mailkit\\2.15.0\\mailkit.2.15.0.nupkg.sha512",
